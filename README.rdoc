@@ -1,11 +1,25 @@
 = Knife BigV
 A work in progress.  This uses the bigv client software to create, list and delete VMs.
 
+All development so far has been with Ruby 1.9.3 on a Debian system.
+
 == Configuration
 Install BigV client and configure it to not require passwords
 
 == Usage
-TODO
+
+knife bigv server delete -N HOSTNAME
+knife bigv server create [RUN LIST...] (options)
+knife bigv server list
+
+When creating a server, the following options are available:
+
+     -C, --server-cores CORES         The number of CPU cores that you want for your VM.
+         --server-discs               Your comma-separated list of disc specifications.
+     -f, --flavor FLAVOR              The operating system to install on the virtual machine.
+     -M, --server-memory MEMORY       The memory that you want for your VM, in GiB.
+
+Flavors available are currently: centos-5.8, centos-6.2, lucid, maverick, natty, oneiric, squeeze, symbiosis, winweb2k8r2, none.
 
 == Bugs
-Probably won't let you bootstrap
+Probably won't let you bootstrap, no tests written, assumes Bigv is already configured and has a password saved.
