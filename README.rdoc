@@ -11,6 +11,7 @@ Install BigV client and configure it to not require passwords
      knife bigv server delete -N HOSTNAME
      knife bigv server create [RUN LIST...] (options)
      knife bigv server list
+     knife bigv flavor list
 
 When creating a server, the following options are available:
 
