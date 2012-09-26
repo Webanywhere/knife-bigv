@@ -28,11 +28,16 @@ class Chef
       banner "knife bigv server delete -N HOSTNAME"
 
       option :server_name,
-                   :short => "-N NAME",
-                   :long => "--server-name NAME",
-                   :description => "The name of the VM you wish to create."
+             :short => "-N NAME",
+             :long => "--server-name NAME",
+             :description => "The name of the VM you wish to create."
 
       def run
+        unless config[:server_name]
+          ui.error("You have not provided an image value")
+          exit 1
+        end
+
         system("bigv vm delete -b --vm-name #{config[:server_name]}")
       end
     end
