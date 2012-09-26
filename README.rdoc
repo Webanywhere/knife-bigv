@@ -1,0 +1,11 @@
+= Knife BigV
+A work in progress.  This uses the bigv client software to create, list and delete VMs.
+
+== Configuration
+Install BigV client and configure it to not require passwords
+
+== Usage
+TODO
+
+== Bugs
+Probably won't let you bootstrap
