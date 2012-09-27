@@ -23,4 +23,7 @@ When creating a server, the following options are available:
 Flavors available are currently: centos-5.8, centos-6.2, lucid, maverick, natty, oneiric, squeeze, symbiosis, winweb2k8r2, none.
 
 == Bugs
-Probably won't let you bootstrap, no tests written, assumes Bigv is already configured and has a password saved.
+There is a known issue with the BigV client in ruby 1.9.  This stops YAML output from working and also means the library depends on the cli client.
+
+The next release of the BigV software is likely to fix both of these issues, at which point we can get bootstrapping working in this plugin.  It is not currently known when the next release is due.
+
