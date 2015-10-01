@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.description = s.summary
   s.author = "Alice Kaerast"
   s.email = "alice.kaerast@webanywhere.co.uk"
+  s.homepage = "https://github.com/Webanywhere/knife-bigv"
 
   s.add_dependency "chef", ">= 0.9.14"
   s.add_dependency "highline"
