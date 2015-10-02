@@ -1,7 +1,6 @@
 = Knife BigV
-A work in progress.  This uses the bigv client software to create, list and delete VMs.
 
-All development so far has been with Ruby 1.9.3 on a Debian system.
+This gem is no longer supported, and is very out of date.  You're probably better off building your own toolset.
 
 == Configuration
 Install BigV client and configure it to not require passwords
